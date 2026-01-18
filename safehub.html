@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RED DRAGON TERMINAL</title>
+
+<style>
+body{
+    margin:0;
+    background:black;
+    color:#00ff00;
+    font-family: monospace;
+}
+
+.terminal{
+    padding:20px;
+    height:100vh;
+    box-sizing:border-box;
+}
+
+.line{
+    margin:5px 0;
+}
+
+.cursor{
+    display:inline-block;
+    width:10px;
+    background:#00ff00;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0%{opacity:1;}
+    50%{opacity:0;}
+    100%{opacity:1;}
+}
+
+.menu button{
+    background:black;
+    color:#00ff00;
+    border:1px solid #00ff00;
+    padding:10px;
+    margin:5px 0;
+    width:100%;
+    font-family: monospace;
+}
+.menu button:hover{
+    background:#00ff00;
+    color:black;
+}
+</style>
+</head>
+
+<body>
+
+<div class="terminal">
+    <div class="line">root@reddragon:~$ initializing system...</div>
+    <div class="line">root@reddragon:~$ loading modules ████████ 100%</div>
+    <div class="line">root@reddragon:~$ access granted ✔</div>
+    <div class="line">root@reddragon:~$ welcome to RED DRAGON OFFICIAL BOX</div>
+    <div class="line">root@reddragon:~$ select tool:</div>
+    <br>
+
+    <div class="menu">
+        <a href="https://www.virustotal.com" target="_blank">
+            <button>▶ Virus & Link Scan</button>
+        </a>
+        <a href="https://www.socialblade.com/facebook" target="_blank">
+            <button>▶ Facebook Analytics</button>
+        </a>
+        <a href="https://www.socialblade.com/tiktok" target="_blank">
+            <button>▶ TikTok Analytics</button>
+        </a>
+        <a href="https://www.socialblade.com/instagram" target="_blank">
+            <button>▶ Instagram Analytics</button>
+        </a>
+    </div>
+
+    <br>
+    <div class="line">root@reddragon:~$ <span class="cursor"></span></div>
+</div>
+
+</body>
+</html>
